@@ -13,9 +13,9 @@ from mirai import Mirai, WebSocketAdapter, FriendMessage, GroupMessage, At, Plai
 from myPack.bilibiliPack.bilibili import bilibili
 if __name__ == '__main__':
     bot = Mirai(
-        qq=2933469541, # 改成你的机器人的 QQ 号
+        qq=, # 改成你的机器人的 QQ 号
         adapter=WebSocketAdapter(
-            verify_key='yirimirai', host='localhost', port=8080
+            verify_key='', host='', port=
         )
     )
 
@@ -90,10 +90,7 @@ if __name__ == '__main__':
             live_finished = True
             # print(bili)
             while True:
-                # await bot.send_friend_message(2282931136, "早安")
-                # now = datetime.datetime.now()
-                # if now.hour == 22:
-                #     await bot.send_friend_message(2282931136, "早安")
+           
                 uidList = []
                 uidList = bili.get_has_update()
                 if uidList is not None:
